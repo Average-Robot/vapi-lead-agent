@@ -2,6 +2,7 @@ import express, { Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import OpenAI from 'openai';
+import process from 'process';
 
 // Load environment variables
 dotenv.config();
@@ -112,12 +113,14 @@ Topics to explore naturally:
   }
 }
 
-// Start the server
-app.listen(PORT, () => {
-  console.log(`🚀 Server is running!`);
-  console.log(`📍 URL: http://localhost:${PORT}`);
-  console.log(`📞 Webhook: http://localhost:${PORT}/api/vapi/webhook`);
-});
+// Start the server when running locally (not on Vercel)
+if (!process.env.VERCEL) {
+  app.listen(PORT, () => {
+    console.log(`🚀 Server is running!`);
+    console.log(`📍 URL: http://localhost:${PORT}`);
+    console.log(`📞 Webhook: http://localhost:${PORT}/api/vapi/webhook`);
+  });
+}
 
-// Export for Vercel
+// Export the app so serverless platforms (like Vercel) can import it
 export default app;

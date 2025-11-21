@@ -1,0 +1,20 @@
+[
+  {
+    "id": "manufacturing-1",
+    "title": "Regional Manufacturing Company Scales to $15M",
+    "industry": "Manufacturing",
+    "summary": "A $7M manufacturing company was being held back by the owner being the operational bottleneck. We partnered to bring in an experienced COO and implemented lean manufacturing processes. Revenue grew to $21M in 18 months while the owner went from 70-hour weeks to 30-hour weeks."
+  },
+  {
+    "id": "distribution-1",
+    "title": "Distribution Business Achieves Successful Exit",
+    "industry": "Distribution",
+    "summary": "A $12M distribution business owner wanted to exit but the business had too much customer concentration and lacked systems. We implemented an 18-month value creation plan that diversified the customer base and built proper systems. The business sold for 2.3x the initial valuation estimate."
+  },
+  {
+    "id": "services-1",
+    "title": "Professional Services Firm Breaks Through Growth Ceiling",
+    "industry": "Professional Services",
+    "summary": "A professional services firm had been stuck at $3M for three years because all client work went through the owner. We developed a scalable service delivery model and built out a sales team. Revenue doubled to $6M in two years with actually improved margins."
+  }
+]
